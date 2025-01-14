@@ -1,0 +1,257 @@
+/* Estilo base */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+    background: #d8f3dc;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    color: #40916c;
+  }
+  
+  .header .tagline {
+    font-size: 1.2rem;
+    color: #1b4332;
+  }
+  
+  /* Sección principal */
+  .main-content {
+    padding: 20px;
+  }
+  
+  .motivational-section, .resources-section, .notepad-section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .motivational-section h2, .resources-section h2, .notepad-section h2 {
+    color: #1b4332;
+  }
+  
+  #quote-btn, #save-note-btn {
+    background: #52b788;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #quote-btn:hover, #save-note-btn:hover {
+    background: #40916c;
+  }
+  
+  /* Bloc de notas */
+  textarea#notepad {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  #notes-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #notes-list li {
+    background: #f8f9fa;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.1rem;
+  }
+  
+  #notes-list li button {
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #notes-list li button:hover {
+    background: #d90429;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background: #d8f3dc;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  /* Animación para mostrar mensajes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  #saved-message {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animación para las notas al aparecer */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #notes-list li {
+    animation: slideIn 0.3s ease-in-out;
+  }
+/* Chat Section */
+.chat-section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  #chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  #chat-box .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #chat-box .user-message {
+    background: #d8f3dc;
+    color: #1b4332;
+    text-align: right;
+  }
+  
+  #chat-box .bot-message {
+    background: #f1d1d0;
+    color: #6a1b1a;
+    text-align: left;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #user-message {
+    flex: 1;
+    height: 50px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  #send-message-btn {
+    background: #52b788;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #send-message-btn:hover {
+    background: #40916c;
+  }
+/* Estilo para la nueva sección de Métodos */
+#metodos-ansiedad {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #metodos-ansiedad h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #388e3c;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .method {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .method h3 {
+    color: #388e3c;
+    font-size: 1.5em;
+  }
+  
+  .method p {
+    color: #333;
+    font-size: 1em;
+  }
+  
+  /* Estilo para el enlace en la navegación */
+  nav a {
+    text-decoration: none;
+    color: #388e3c;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  nav a:hover {
+    color: #1b5e20;
+  }
+      
+      
